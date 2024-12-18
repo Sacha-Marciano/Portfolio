@@ -26,8 +26,10 @@ const projects = [
     num: "01",
     category: "Full Stack",
     title: "Helpeat",
-    description:
-      "mesofne flknvelnr aebciwbf sfjvneornewo sdkc skbqne sf vks caienfow cewjf jdsjacnonc ",
+    description: `Discover, create, and share delicious recipes while connecting with a community of food lovers.
+    Effortlessly plan your weekly meals by adding favorites to your personalized schedule.
+    Simplify shopping with a smart grocery list generated from your meal plan.
+    Helpeat makes cooking, planning, and sharing recipes easy and enjoyable!`,
     stack: [
       { name: "React" },
       { name: "MongoDB" },
@@ -41,28 +43,83 @@ const projects = [
   },
   {
     num: "02",
-    category: "frontend",
-    title: "Coffeeshop",
-    description:
-      "mesofne flknvelnr aebciwbf sfjvneornewo sdkc skbqne sf vks caienfow cewjf jdsjacnonc ",
+    category: "Frontend",
+    title: "Portfolio",
+    description: `Built with the power of Next.js, this sleek portfolio website is your window into my professional journey.
+    Explore my projects, skills, and achievements, all presented in a dynamic and modern design.
+    Seamlessly navigate through a showcase of my expertise and career milestones.
+    This site isn’t just a portfolio—it’s a statement of passion, creativity, and dedication!`,
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "Javascript" },
+    ],
+    image: "/assets/projects/Portfolio/Portfolio.png",
+    live: "/",
+    github: "",
+  },
+  {
+    num: "03",
+    category: "Full Stack",
+    title: "WTWR",
+    description: `WTWR is a smart weather app where functionality meets security and style!
+I built the frontend and my first-ever REST API, complete with user authentication, to fetch real-time weather from WeatherAPI.
+The app suggests clothing based on the weather and the user’s clothes collection.
+This forecast app is your next personalized wardrobe assistant!`,
+    stack: [
+      { name: "React" },
+      { name: "MongoDB" },
+      { name: "Express" },
+      { name: "Node.js" },
+      { name: "Javascript" },
+    ],
+    image: "/assets/projects/WeatherApp/WTWR.png",
+    live: "",
+    github: "https://github.com/Sacha-Marciano/se_project_react",
+  },
+  {
+    num: "04",
+    category: "Frontend",
+    title: "Around the U.S",
+    description: `Around the US is an Instagram-like app inspired by Jacques Cousteau’s incredible adventures!
+Explore and admire stunning images of the most beautiful places he’s visited.
+Users can add their own pictures, edit captions, and like their favorite posts.
+It’s a celebration of exploration, creativity, and breathtaking destinations!`,
+    stack: [
+      { name: "HTML 5" },
+      { name: "CSS 3" },
+      { name: "Javascript" },
+      { name: "REST API" },
+    ],
+    image: "/assets/projects/InstagramLike/Around.png",
+    live: "",
+    github: "https://github.com/Sacha-Marciano/se_project_aroundtheus",
+  },
+  {
+    num: "05",
+    category: "Frontend",
+    title: " Coffee Shop Menu",
+    description: `This vibrant landing page brings your favorite coffee shop experience online!
+Explore the menu, watch embedded YouTube videos showcasing the best recipes, and place orders seamlessly with our custom form.
+Designed to be visually appealing and user-friendly, it’s perfect for coffee lovers everywhere.`,
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" }],
     image: "/assets/projects/Coffeeshop/Coffeeshop.png",
     live: "",
     github: "https://github.com/Sacha-Marciano/se_project_coffeeshop",
   },
   {
-    num: "03",
-    category: "frontend",
-    title: "Portfolio",
+    num: "06",
+    category: "Full Stack",
+    title: "Coming soon",
     description:
-      "mesofne flknvelnr aebciwbf sfjvneornewo sdkc skbqne sf vks caienfow cewjf jdsjacnonc ",
+      "I am actually working with a team of 5 FS devs to create a deploy a website for a foundation.",
     stack: [
       { name: "Next.js" },
       { name: "Tailwind.css" },
-      { name: "Javascript" },
+      { name: "Typescript" },
     ],
-    image: "/assets/Portfolio/Portfolio.png",
-    live: "/",
+    image: "",
+    live: "",
     github: "",
   },
 ];
@@ -90,8 +147,8 @@ const Projects = () => {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px]">
               {/* outline num */}
-              <div className="text-8xl leading-none font-extrabold">
-                {project.num}
+              <div className="flex text-8xl leading-none font-extrabold">
+                {project.num} {project.title}
               </div>
               {/* project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
@@ -114,31 +171,39 @@ const Projects = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project */}
-                <Link href={project.live} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live Project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.live !== "" ? (
+                  <Link href={project.live} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live Project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                ) : (
+                  ""
+                )}
                 {/* github project */}
-                <Link href={project.github} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.github !== "" ? (
+                  <Link href={project.github} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           </div>
@@ -161,7 +226,7 @@ const Projects = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="object-contain"
+                          className="object-cover"
                           alt="project image"
                         />
                       </div>

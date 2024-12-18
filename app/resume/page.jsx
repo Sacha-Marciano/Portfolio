@@ -30,15 +30,11 @@ const about = {
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Sacha Marciano",
+      fieldValue: "Sacha Mordekhai Marciano",
     },
     {
       fieldName: "Phone",
       fieldValue: "+972 53-708-0183",
-    },
-    {
-      fieldName: "LinkedIn",
-      fieldValue: "Sacha Mordekhai Marciano",
     },
     {
       fieldName: "Email",
