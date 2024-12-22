@@ -65,8 +65,18 @@ by self-learning new technologies to enhance my performance.`,
     },
     {
       company: "HP",
-      position: "RnD Integrator",
-      duration: "03/2021 - 11/2024",
+      position: "Machine Leader",
+      duration: "05/2022 - 11/2024",
+    },
+    {
+      company: "HP",
+      position: "RnD Integration Engineer",
+      duration: "11/2021 - 11/2024",
+    },
+    {
+      company: "HP - Experis",
+      position: "Fly/Field Integration Engineer",
+      duration: "03/2021 - 11/2021",
     },
     {
       company: "IDF",
