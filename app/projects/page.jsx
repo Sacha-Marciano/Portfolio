@@ -56,7 +56,7 @@ const projects = [
     ],
     image: "/assets/projects/Portfolio/Portfolio.png",
     live: "/",
-    github: "",
+    github: "https://github.com/Sacha-Marciano/Portfolio",
   },
   {
     num: "03",

@@ -52,8 +52,10 @@ const Contacts = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent"> Let's work together !</h3>
               <p className="text-white/60">
-                wkrnv;ewnvpenvqoeanv;ekqng;a emvqepojv'ae ernegnieop wjrwpw
-                wwipfw ecrjnvje
+                Wether you are an entrepreneur with the century's idea or a
+                talent aquisition specialist for a big company we can work
+                together ! Don't hesitate to contact me directly or leave me
+                your info in the form, and I will contact you !
               </p>
               {/* inputs */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -26,7 +26,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "mesofne flknvelnr aebciwbf sfjvneornewo sdkc skbqne sf vks caienfow cewjf jdsjacnonc ",
+    "I’m a 26-year-old passionate developer, happily married with a newborn and a dog named Puma. Since graduating, I've dedicated myself to creating projects that not only help me grow but also make a positive impact on others. Coding has become my outlet for focus and creativity—there’s something deeply satisfying about building something from scratch and seeing the results unfold right before my eyes.Outside of coding, I enjoy playing soccer, paddle, and spending time with friends and family over board games and cards. I believe in maintaining a balanced lifestyle, where my hobbies fuel my creativity and keep me energized for the challenges of development.",
   info: [
     {
       fieldName: "Name",
@@ -54,8 +54,9 @@ const about = {
 const experience = {
   icon: "/assets/resume/Experience.png",
   title: "My experience",
-  description:
-    "mesofne flknvelnr aebciwbf sfjvneornewo sdkc skbqne sf vks caienfow cewjf jdsjacnonc ",
+  description: `Tri-lingual Electronics Engineer turned full-stack developer. I bring a strong foundation in engineering 
+standards and am skilled in front-end and back-end development. I am constantly improving my skills 
+by self-learning new technologies to enhance my performance.`,
   items: [
     {
       company: "The W.I.S.E foundation",
@@ -79,7 +80,7 @@ const education = {
   icon: "/assets/resume/Education.png",
   title: "My education",
   description:
-    "mesofne flknvelnr aebciwbf sfjvneornewo sdkc skbqne sf vks caienfow cewjf jdsjacnonc ",
+    "I began my journey in electronics engineering as part of the prestigious Technological 'Atuda' program, which grants access to elite units within the IDF. Over six years, I gained extensive hands-on experience across a broad range of engineering disciplines. Driven by a passion for deepening my expertise, I chose to specialize in full-stack development, with the goal of mastering this dynamic field and leveraging my engineering background to create innovative, impactful solutions.",
   items: [
     {
       institution: "TripleTen Academy",
@@ -91,13 +92,18 @@ const education = {
       degree: "Electronics engineering",
       duration: "08/2016 - 06/2018",
     },
+    {
+      institution: "B. Ostrovsky, Ra'anana",
+      degree: "High School Diploma",
+      duration: "07/2013 - 06/2016",
+    },
   ],
 };
 
 const skills = {
   title: "My skills",
   description:
-    "mesofne flknvelnr aebciwbf sfjvneornewo sdkc skbqne sf vks caienfow cewjf jdsjacnonc ",
+    "Through the TripleTen bootcamp and my own natural curiosity, I have gained a solid foundation in a variety of technologies. I am passionate about expanding my expertise in the areas I have already explored, while continually learning and staying up-to-date with new advancements every day.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -265,7 +271,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}{" "}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                <ul className="grid grid-cols-1 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
                       <li
