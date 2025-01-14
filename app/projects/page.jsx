@@ -25,6 +25,23 @@ const projects = [
   {
     num: "01",
     category: "Full Stack",
+    title: "LMS",
+    description: `This Learning Management System (LMS) offers a flexible structure that can be easily customized to meet a wide range of requirements. It provides features for instructors to add and edit courses, while students can purchase and access courses seamlessly.`,
+    stack: [
+      { name: "React" },
+      { name: "MongoDB" },
+      { name: "Express" },
+      { name: "Node.js" },
+      { name: "ShadcnUI" },
+      { name: "Javascript" },
+    ],
+    image: "/assets/projects/LMS/LMS.png",
+    live: "",
+    github: "https://github.com/Sacha-Marciano/LMS",
+  },
+  {
+    num: "02",
+    category: "Full Stack",
     title: "Helpeat",
     description: `Discover, create, and share delicious recipes while connecting with a community of food lovers.
     Effortlessly plan your weekly meals by adding favorites to your personalized schedule.
@@ -42,7 +59,7 @@ const projects = [
     github: "https://github.com/Sacha-Marciano/HelpEat_frontend",
   },
   {
-    num: "02",
+    num: "03",
     category: "Frontend",
     title: "Portfolio",
     description: `Built with the power of Next.js, this sleek portfolio website is your window into my professional journey.
@@ -59,7 +76,24 @@ const projects = [
     github: "https://github.com/Sacha-Marciano/Portfolio",
   },
   {
-    num: "03",
+    num: "04",
+    category: "Frontend",
+    title: "UI/UX Designer Portfolio",
+    description: `Built with the power of Next.js, this sleek portfolio website is your window into my professional journey.
+    Explore my projects, skills, and achievements, all presented in a dynamic and modern design.
+    Seamlessly navigate through a showcase of my expertise and career milestones.
+    This site isn’t just a portfolio—it’s a statement of passion, creativity, and dedication!`,
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "Javascript" },
+    ],
+    image: "/assets/projects/UIUXPortofolio/UIUXPortofolio.png",
+    live: "https://edenjf.vercel.app/",
+    github: "https://github.com/Sacha-Marciano/uiux_portfolio",
+  },
+  {
+    num: "05",
     category: "Full Stack",
     title: "WTWR",
     description: `WTWR is a smart weather app where functionality meets security and style!
@@ -78,7 +112,7 @@ This forecast app is your next personalized wardrobe assistant!`,
     github: "https://github.com/Sacha-Marciano/se_project_react",
   },
   {
-    num: "04",
+    num: "06",
     category: "Frontend",
     title: "Around the U.S",
     description: `Around the US is an Instagram-like app inspired by Jacques Cousteau’s incredible adventures!
@@ -96,7 +130,7 @@ It’s a celebration of exploration, creativity, and breathtaking destinations!`
     github: "https://github.com/Sacha-Marciano/se_project_aroundtheus",
   },
   {
-    num: "05",
+    num: "07",
     category: "Frontend",
     title: " Coffee Shop Menu",
     description: `This vibrant landing page brings your favorite coffee shop experience online!
@@ -108,11 +142,11 @@ Designed to be visually appealing and user-friendly, it’s perfect for coffee l
     github: "https://github.com/Sacha-Marciano/se_project_coffeeshop",
   },
   {
-    num: "06",
+    num: "08",
     category: "Full Stack",
     title: "Coming soon",
     description:
-      "I am actually working with a team of 5 FS devs to create a deploy a website for a foundation.",
+      "I am actually working with a team of 5 FS devs to create a deploy a CRM for a foundation.",
     stack: [
       { name: "Next.js" },
       { name: "Tailwind.css" },
