@@ -24,6 +24,22 @@ import ProjectSliderButtons from "@/components/ProjectSliderButtons";
 const projects = [
   {
     num: "01",
+    category: "Frontend",
+    title: "The Voices",
+    description: `This website was custom made for Stephane, the founder of the Voices, an entertainment company present in the events scene for more than 12 years. This webiste helps Stephane and his company get new leads every day`,
+    stack: [
+      { name: "React" },
+      { name: "Vite" },
+      { name: "Tailwind" },
+      { name: "EmailJS" },
+      { name: "Javascript" },
+    ],
+    image: "/assets/projects/TheVoices/The-voices.png",
+    live: "https://the-voices.vercel.app",
+    github: "https://github.com/Sacha-Marciano/the_voices",
+  },
+  {
+    num: "02",
     category: "Full Stack",
     title: "LMS",
     description: `This Learning Management System (LMS) offers a flexible structure that can be easily customized to meet a wide range of requirements. It provides features for instructors to add and edit courses, while students can purchase and access courses seamlessly.`,
@@ -40,7 +56,23 @@ const projects = [
     github: "https://github.com/Sacha-Marciano/LMS",
   },
   {
-    num: "02",
+    num: "03",
+    category: "Frontend",
+    title: "Google Flights Search",
+    description: `This project was built for a job application assignment (passed successfully) and will find the chepeast, fastest or best flights over all airlines, which makes it better than the most popular flights search engines that works with only specific airlines.`,
+    stack: [
+      { name: "React" },
+      { name: "Vite" },
+      { name: "RapidAPI" },
+      { name: "MaterialUI" },
+      { name: "Javascript" },
+    ],
+    image: "/assets/projects/GoogleFS/GoogleFS.png",
+    live: "",
+    github: "https://github.com/Sacha-Marciano/google-flights-sim",
+  },
+  {
+    num: "04",
     category: "Full Stack",
     title: "Helpeat",
     description: `Discover, create, and share delicious recipes while connecting with a community of food lovers.
@@ -59,7 +91,7 @@ const projects = [
     github: "https://github.com/Sacha-Marciano/HelpEat_frontend",
   },
   {
-    num: "03",
+    num: "05",
     category: "Frontend",
     title: "Portfolio",
     description: `Built with the power of Next.js, this sleek portfolio website is your window into my professional journey.
@@ -76,7 +108,7 @@ const projects = [
     github: "https://github.com/Sacha-Marciano/Portfolio",
   },
   {
-    num: "04",
+    num: "06",
     category: "Frontend",
     title: "UI/UX Designer Portfolio",
     description: `Built with the power of Next.js, this sleek portfolio website is your window into my professional journey.
@@ -93,7 +125,7 @@ const projects = [
     github: "https://github.com/Sacha-Marciano/uiux_portfolio",
   },
   {
-    num: "05",
+    num: "07",
     category: "Full Stack",
     title: "WTWR",
     description: `WTWR is a smart weather app where functionality meets security and style!
@@ -112,7 +144,7 @@ This forecast app is your next personalized wardrobe assistant!`,
     github: "https://github.com/Sacha-Marciano/se_project_react",
   },
   {
-    num: "06",
+    num: "08",
     category: "Frontend",
     title: "Around the U.S",
     description: `Around the US is an Instagram-like app inspired by Jacques Cousteau’s incredible adventures!
@@ -130,7 +162,7 @@ It’s a celebration of exploration, creativity, and breathtaking destinations!`
     github: "https://github.com/Sacha-Marciano/se_project_aroundtheus",
   },
   {
-    num: "07",
+    num: "09",
     category: "Frontend",
     title: " Coffee Shop Menu",
     description: `This vibrant landing page brings your favorite coffee shop experience online!
@@ -142,7 +174,7 @@ Designed to be visually appealing and user-friendly, it’s perfect for coffee l
     github: "https://github.com/Sacha-Marciano/se_project_coffeeshop",
   },
   {
-    num: "08",
+    num: "10",
     category: "Full Stack",
     title: "Coming soon",
     description:

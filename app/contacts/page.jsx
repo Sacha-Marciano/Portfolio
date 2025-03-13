@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+// import { emailjs } from "emailjs";
 
 import {
   Select,
@@ -16,6 +17,7 @@ import {
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const info = [
   {
@@ -36,6 +38,50 @@ const info = [
 ];
 
 const Contacts = () => {
+  const [inputs, setInputs] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    email: "",
+    note: "",
+  });
+
+  const handleChange = (evt) => {
+    const name = evt.target.name;
+    const value = evt.target.value;
+    setInputs({ ...inputs, [name]: value });
+  };
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+
+    window.alert(
+      "A mail has been sent with an offer of 25K$/month !                                Just kidding, if you want to contact Sacha, please send a mail to momarciano26@gmail.com"
+    );
+
+    // emailjs
+    //   .send(
+    //     "service_s9xyt8p", // Replace with your EmailJS Service ID
+    //     "template_9201vqr", // Replace with your EmailJS Template ID
+    //     {
+    //       name: inputs.name,
+    //       phone: inputs.phone,
+    //       email: inputs.email,
+    //       note: inputs.note,
+    //     },
+    //     "m1aI-1ke3rMEavsXN" // Replace with your EmailJS Public Key
+    //   )
+    //   .then(
+    //     (response) => {
+    //       console.log("Email sent successfully!", response);
+    //       alert("Email sent successfully!");
+    //     },
+    //     (error) => {
+    //       console.error("Error sending email:", error);
+    //       alert("Failed to send email.");
+    //     }
+    //   );
+  };
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -59,23 +105,47 @@ const Contacts = () => {
               </p>
               {/* inputs */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email adress" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input
+                  type="firstname"
+                  placeholder="Firstname"
+                  name="firstName"
+                  onChange={handleChange}
+                />
+                <Input
+                  type="lastname"
+                  placeholder="Lastname"
+                  name="lastName"
+                  onChange={handleChange}
+                />
+                <Input
+                  type="email"
+                  placeholder="Email adress"
+                  name="email"
+                  onChange={handleChange}
+                />
+                <Input
+                  type="phone"
+                  placeholder="Phone number"
+                  name="phone"
+                  onChange={handleChange}
+                />
               </div>
               {/* select */}
-              <Select>
+              <Select name="subject" onChange={handleChange}>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a subject" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a subject</SelectLabel>
-                    <SelectItem value="est">Job Interview</SelectItem>
-                    <SelectItem value="cst">Skills discussion</SelectItem>
-                    <SelectItem value="mst">Project planning</SelectItem>
-                    <SelectItem value="dst">Brainstorming</SelectItem>
+                    <SelectItem value="Job Interview">Job Interview</SelectItem>
+                    <SelectItem value="Skills discussion">
+                      Skills discussion
+                    </SelectItem>
+                    <SelectItem value="Project planning">
+                      Project planning
+                    </SelectItem>
+                    <SelectItem value="Brainstorming">Brainstorming</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -83,9 +153,11 @@ const Contacts = () => {
               <Textarea
                 className="h-[200px]"
                 placeholder="Type your message here."
+                name="note"
+                onChange={handleChange}
               />
               {/* submit */}
-              <Button size="md" className="max-w-40">
+              <Button size="md" className="max-w-40" onClick={handleSubmit}>
                 Send message
               </Button>
             </form>
