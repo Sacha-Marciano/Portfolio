@@ -56,7 +56,7 @@ const Contacts = () => {
     evt.preventDefault();
 
     window.alert(
-      "A mail has been sent with an offer of 25K$/month !                                Just kidding, if you want to contact Sacha, please send a mail to momarciano26@gmail.com"
+      "A mail has been sent with an offer of 25K$/month !                                Just kidding, my mailJS account is broken, I am fixing it now, if you want to contact me, please send a mail to momarciano26@gmail.com"
     );
 
     // emailjs

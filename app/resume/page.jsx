@@ -55,13 +55,17 @@ const experience = {
   icon: "/assets/resume/Experience.png",
   title: "My experience",
   description: `Tri-lingual Electronics Engineer turned full-stack developer. I bring a strong foundation in engineering 
-standards and am skilled in front-end and back-end development. I am constantly improving my skills 
-by self-learning new technologies to enhance my performance.`,
+standards and am skilled in front-end and back-end development. I am driven by the classic expression : "If you love your work, then you'll never work a day in your life"`,
   items: [
+    {
+      company: "TripleTen",
+      position: "Senior Student Mentor",
+      duration: "11/2024 - present",
+    },
     {
       company: "The W.I.S.E foundation",
       position: "Full Stack Developer",
-      duration: "03/2021 - 11/2024",
+      duration: "11/2024 - present",
     },
     {
       company: "HP",
@@ -105,7 +109,7 @@ const education = {
     {
       institution: "B. Ostrovsky, Ra'anana",
       degree: "High School Diploma",
-      duration: "07/2013 - 06/2016",
+      duration: "09/2013 - 06/2016",
     },
   ],
 };
@@ -152,8 +156,8 @@ const skills = {
       name: "Next.js",
     },
     {
-      icon: <SiTailwindcss className="opacity-50" />,
-      name: "Coming soon",
+      icon: <SiTailwindcss />,
+      name: "Tailwind CSS",
     },
   ],
 };
