@@ -21,7 +21,7 @@ const Home = () => {
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               I excel at creating full stack applications using various
-              techonlogies for front and back ends. I am dedicated to creating
+              technologies for front and back ends. I am dedicated to creating
               helpful scalable projects that'll have an impact on society.
             </p>
 
