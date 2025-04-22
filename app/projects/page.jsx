@@ -26,7 +26,7 @@ const projects = [
     num: "01",
     category: "Frontend",
     title: "The Voices",
-    description: `This website was custom made for Stephane, the founder of the Voices, an entertainment company present in the events scene for more than 12 years. This webiste helps Stephane and his company get new leads every day`,
+    description: `This website was custom made for Stephane, the founder of the Voices, an entertainment company present in the events scene for more than 12 years. I coded the entire website in 36 hours, during a flight to Argentina. This webiste helps Stephane and his company get new leads every day`,
     stack: [
       { name: "React" },
       { name: "Vite" },
@@ -127,6 +127,21 @@ const projects = [
   {
     num: "07",
     category: "Full Stack",
+    title: "W.I.S.E. Foundation",
+    description:
+      "I designed and developed the official website for the W.I.S.E. Foundation as part of a team of five full-stack developers, using Next.js, Tailwind CSS, and TypeScript to deliver a responsive and accessible experience. The site amplifies the foundation’s mission to empower women economically and build purpose-driven communities. In addition to the website, I led the development of a custom Learning Management System (LMS) to support their educational initiatives, which is also featured in my portfolio. This project highlights my ability to collaborate effectively and deliver impactful, scalable digital solutions.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "Typescript" },
+    ],
+    image: "/assets/projects/WISE/WISE.png",
+    live: "https://www.wisefdn.org/",
+    github: "",
+  },
+  {
+    num: "08",
+    category: "Full Stack",
     title: "WTWR",
     description: `WTWR is a smart weather app where functionality meets security and style!
 I built the frontend and my first-ever REST API, complete with user authentication, to fetch real-time weather from WeatherAPI.
@@ -144,7 +159,7 @@ This forecast app is your next personalized wardrobe assistant!`,
     github: "https://github.com/Sacha-Marciano/se_project_react",
   },
   {
-    num: "08",
+    num: "09",
     category: "Frontend",
     title: "Around the U.S",
     description: `Around the US is an Instagram-like app inspired by Jacques Cousteau’s incredible adventures!
@@ -162,7 +177,7 @@ It’s a celebration of exploration, creativity, and breathtaking destinations!`
     github: "https://github.com/Sacha-Marciano/se_project_aroundtheus",
   },
   {
-    num: "09",
+    num: "10",
     category: "Frontend",
     title: " Coffee Shop Menu",
     description: `This vibrant landing page brings your favorite coffee shop experience online!
@@ -172,21 +187,6 @@ Designed to be visually appealing and user-friendly, it’s perfect for coffee l
     image: "/assets/projects/Coffeeshop/Coffeeshop.png",
     live: "",
     github: "https://github.com/Sacha-Marciano/se_project_coffeeshop",
-  },
-  {
-    num: "10",
-    category: "Full Stack",
-    title: "Coming soon",
-    description:
-      "I am actually working with a team of 5 FS devs to create a deploy a CRM for a foundation.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind.css" },
-      { name: "Typescript" },
-    ],
-    image: "",
-    live: "",
-    github: "",
   },
 ];
 

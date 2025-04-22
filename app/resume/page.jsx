@@ -1,12 +1,23 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaAws,
+} from "react-icons/fa";
 import {
   SiTailwindcss,
   SiNextdotjs,
   SiMongodb,
   SiExpress,
   SiTypescript,
+  SiGooglecloud,
+  SiMui,
+  SiShadcnui,
+  SiGithub,
 } from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -128,6 +139,10 @@ const skills = {
       name: "CSS 3",
     },
     {
+      icon: <SiTailwindcss />,
+      name: "Tailwind CSS",
+    },
+    {
       icon: <FaJs />,
       name: "Javascript",
     },
@@ -138,6 +153,10 @@ const skills = {
     {
       icon: <FaReact />,
       name: "React",
+    },
+    {
+      icon: <SiNextdotjs />,
+      name: "Next.js",
     },
     {
       icon: <SiMongodb />,
@@ -152,12 +171,24 @@ const skills = {
       name: "Node.js",
     },
     {
-      icon: <SiNextdotjs />,
-      name: "Next.js",
+      icon: <SiGooglecloud />,
+      name: "Google Cloud Platform",
     },
     {
-      icon: <SiTailwindcss />,
-      name: "Tailwind CSS",
+      icon: <FaAws />,
+      name: "Amazon Web Services",
+    },
+    {
+      icon: <SiMui />,
+      name: "Material UI",
+    },
+    {
+      icon: <SiShadcnui />,
+      name: "Shadcn UI",
+    },
+    {
+      icon: <SiGithub />,
+      name: "Github",
     },
   ],
 };
