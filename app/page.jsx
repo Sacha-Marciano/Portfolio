@@ -13,11 +13,21 @@ import { useEffect } from "react";
 
 const Home = () => {
   const sendEmail = async () => {
+    const res = await fetch("https://ipapi.co/json");
+    const data = await res.json();
+
     try {
       const result = await emailjs.send(
         "service_pfayipm",
-        "template_yelg8a6",
-        {},
+        "template_g891qpv",
+        {
+          userInfo: navigator.userAgent,
+          navigatedAt: new Date().toLocaleString(),
+          ipAddress: data.ip,
+          city: data.city,
+          country: data.country_name,
+          isp: data.org,
+        },
         "YiQoeruumw6dSzKRI"
       );
     } catch (error) {
