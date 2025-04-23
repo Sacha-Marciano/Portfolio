@@ -1,13 +1,34 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Link from "next/link";
+
+import emailjs from "emailjs-com";
 
 // components
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import { useEffect } from "react";
 
 const Home = () => {
+  const sendEmail = async () => {
+    try {
+      const result = await emailjs.send(
+        "service_pfayipm",
+        "template_yelg8a6",
+        {},
+        "YiQoeruumw6dSzKRI"
+      );
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    sendEmail();
+  }, []);
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
