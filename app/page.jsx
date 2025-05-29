@@ -60,7 +60,7 @@ const Home = () => {
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="uppercase">
                 <Link
-                  href={"./assets/resume/resume.pdf"}
+                  href={"./assets/resume/Sacha_M_Marciano_CV.pdf"}
                   download
                   target="_blank"
                   className="flex items-center gap-2"
