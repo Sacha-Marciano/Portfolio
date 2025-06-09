@@ -20,10 +20,47 @@ import Image from "next/image";
 
 //components
 import ProjectSliderButtons from "@/components/ProjectSliderButtons";
-
 const projects = [
   {
     num: "01",
+    category: "Full Stack",
+    title: "Paul",
+    description:
+      "Paul is an AI-powered document management platform that helps users organize, search, and understand their documents more intelligently. Built with a modern serverless architecture using AWS Amplify, MongoDB Atlas, and Vertex AI, Paul leverages advanced LLMs and vector embeddings to classify, deduplicate, and retrieve documents by relevance. Users can upload Google Docs into collaborative “rooms,” where smart tagging, foldering, and chat-based question answering provide a seamless knowledge discovery experience.",
+    stack: [
+      { name: "Next.js" },
+      { name: "MongoDB Atlas" },
+      { name: "Tailwind.css" },
+      { name: "Typescript" },
+      { name: "Python" },
+      { name: "Gemini 2.0" },
+      { name: "FastAPI" },
+      { name: "GCP" },
+    ],
+    image: "/assets/projects/Paul/Paul.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "02",
+    category: "Full Stack",
+    title: "Wavehub",
+    description:
+      "WaveHub is a live-streaming platform I helped build, featuring real-time beach camera feeds, VOD playback, and downloadable clips. I was involved in both the front-end and back-end development, ensuring smooth video delivery, responsive UI, and efficient handling of multiple camera streams. The platform provides surfers and beachgoers with up-to-date conditions and easy access to past footage.",
+    stack: [
+      { name: "Next.js" },
+      { name: "MongoDB Atlas" },
+      { name: "Tailwind.css" },
+      { name: "Typescript" },
+      { name: "WowzaStreamingEngine" },
+      { name: "AWS" },
+    ],
+    image: "/assets/projects/Wavehub/Wavehub.png",
+    live: "https://wavehub.co.il/",
+    github: "",
+  },
+  {
+    num: "03",
     category: "Frontend",
     title: "The Voices",
     description: `This website was custom made for Stephane, the founder of the Voices, an entertainment company present in the events scene for more than 12 years. I coded the entire website in 36 hours, during a flight to Argentina. This webiste helps Stephane and his company get new leads every day`,
@@ -39,7 +76,22 @@ const projects = [
     github: "https://github.com/Sacha-Marciano/the_voices",
   },
   {
-    num: "02",
+    num: "04",
+    category: "Full Stack",
+    title: "W.I.S.E. Foundation",
+    description:
+      "I designed and developed the official website for the W.I.S.E. Foundation as part of a team of five full-stack developers, using Next.js, Tailwind CSS, and TypeScript to deliver a responsive and accessible experience. The site amplifies the foundation’s mission to empower women economically and build purpose-driven communities. In addition to the website, I led the development of a custom Learning Management System (LMS) to support their educational initiatives, which is also featured in my portfolio. This project highlights my ability to collaborate effectively and deliver impactful, scalable digital solutions.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "Typescript" },
+    ],
+    image: "/assets/projects/WISE/WISE.png",
+    live: "https://www.wisefdn.org/",
+    github: "",
+  },
+  {
+    num: "05",
     category: "Full Stack",
     title: "LMS",
     description: `This Learning Management System (LMS) offers a flexible structure that can be easily customized to meet a wide range of requirements. It provides features for instructors to add and edit courses, while students can purchase and access courses seamlessly.`,
@@ -56,7 +108,7 @@ const projects = [
     github: "https://github.com/Sacha-Marciano/LMS",
   },
   {
-    num: "03",
+    num: "06",
     category: "Frontend",
     title: "Google Flights Search",
     description: `This project was built for a job application assignment (passed successfully) and will find the chepeast, fastest or best flights over all airlines, which makes it better than the most popular flights search engines that works with only specific airlines.`,
@@ -72,7 +124,41 @@ const projects = [
     github: "https://github.com/Sacha-Marciano/google-flights-sim",
   },
   {
-    num: "04",
+    num: "07",
+    category: "Frontend",
+    title: "UI/UX Designer Portfolio",
+    description: `Built with the power of Next.js, this sleek portfolio website is your window into my professional journey.
+    Explore my projects, skills, and achievements, all presented in a dynamic and modern design.
+    Seamlessly navigate through a showcase of my expertise and career milestones.
+    This site isn’t just a portfolio—it’s a statement of passion, creativity, and dedication!`,
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "Javascript" },
+    ],
+    image: "/assets/projects/UIUXPortofolio/UIUXPortofolio.png",
+    live: "https://edenjf.vercel.app/",
+    github: "https://github.com/Sacha-Marciano/uiux_portfolio",
+  },
+  {
+    num: "08",
+    category: "Frontend",
+    title: "Portfolio",
+    description: `Built with the power of Next.js, this sleek portfolio website is your window into my professional journey.
+    Explore my projects, skills, and achievements, all presented in a dynamic and modern design.
+    Seamlessly navigate through a showcase of my expertise and career milestones.
+    This site isn’t just a portfolio—it’s a statement of passion, creativity, and dedication!`,
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "Javascript" },
+    ],
+    image: "/assets/projects/Portfolio/Portfolio.png",
+    live: "/",
+    github: "https://github.com/Sacha-Marciano/Portfolio",
+  },
+  {
+    num: "09",
     category: "Full Stack",
     title: "Helpeat",
     description: `Discover, create, and share delicious recipes while connecting with a community of food lovers.
@@ -90,57 +176,9 @@ const projects = [
     live: "https://helpeat.jumpingcrab.com",
     github: "https://github.com/Sacha-Marciano/HelpEat_frontend",
   },
+
   {
-    num: "05",
-    category: "Frontend",
-    title: "Portfolio",
-    description: `Built with the power of Next.js, this sleek portfolio website is your window into my professional journey.
-    Explore my projects, skills, and achievements, all presented in a dynamic and modern design.
-    Seamlessly navigate through a showcase of my expertise and career milestones.
-    This site isn’t just a portfolio—it’s a statement of passion, creativity, and dedication!`,
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind.css" },
-      { name: "Javascript" },
-    ],
-    image: "/assets/projects/Portfolio/Portfolio.png",
-    live: "/",
-    github: "https://github.com/Sacha-Marciano/Portfolio",
-  },
-  {
-    num: "06",
-    category: "Frontend",
-    title: "UI/UX Designer Portfolio",
-    description: `Built with the power of Next.js, this sleek portfolio website is your window into my professional journey.
-    Explore my projects, skills, and achievements, all presented in a dynamic and modern design.
-    Seamlessly navigate through a showcase of my expertise and career milestones.
-    This site isn’t just a portfolio—it’s a statement of passion, creativity, and dedication!`,
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind.css" },
-      { name: "Javascript" },
-    ],
-    image: "/assets/projects/UIUXPortofolio/UIUXPortofolio.png",
-    live: "https://edenjf.vercel.app/",
-    github: "https://github.com/Sacha-Marciano/uiux_portfolio",
-  },
-  {
-    num: "07",
-    category: "Full Stack",
-    title: "W.I.S.E. Foundation",
-    description:
-      "I designed and developed the official website for the W.I.S.E. Foundation as part of a team of five full-stack developers, using Next.js, Tailwind CSS, and TypeScript to deliver a responsive and accessible experience. The site amplifies the foundation’s mission to empower women economically and build purpose-driven communities. In addition to the website, I led the development of a custom Learning Management System (LMS) to support their educational initiatives, which is also featured in my portfolio. This project highlights my ability to collaborate effectively and deliver impactful, scalable digital solutions.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Tailwind.css" },
-      { name: "Typescript" },
-    ],
-    image: "/assets/projects/WISE/WISE.png",
-    live: "https://www.wisefdn.org/",
-    github: "",
-  },
-  {
-    num: "08",
+    num: "10",
     category: "Full Stack",
     title: "WTWR",
     description: `WTWR is a smart weather app where functionality meets security and style!
@@ -159,7 +197,7 @@ This forecast app is your next personalized wardrobe assistant!`,
     github: "https://github.com/Sacha-Marciano/se_project_react",
   },
   {
-    num: "09",
+    num: "11",
     category: "Frontend",
     title: "Around the U.S",
     description: `Around the US is an Instagram-like app inspired by Jacques Cousteau’s incredible adventures!
@@ -177,7 +215,7 @@ It’s a celebration of exploration, creativity, and breathtaking destinations!`
     github: "https://github.com/Sacha-Marciano/se_project_aroundtheus",
   },
   {
-    num: "10",
+    num: "12",
     category: "Frontend",
     title: " Coffee Shop Menu",
     description: `This vibrant landing page brings your favorite coffee shop experience online!
