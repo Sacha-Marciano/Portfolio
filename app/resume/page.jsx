@@ -69,6 +69,16 @@ const experience = {
 standards and am skilled in front-end and back-end development. I am driven by the classic expression : "If you love your work, then you'll never work a day in your life"`,
   items: [
     {
+      company: "Stealth Startup",
+      position: "Full Stack Developer",
+      duration: "05/2025 - present",
+    },
+    {
+      company: "Wavehub",
+      position: "Full Stack Developer",
+      duration: "04/2025 - 05/2025",
+    },
+    {
       company: "TripleTen",
       position: "Senior Student Mentor",
       duration: "11/2024 - present",
@@ -76,7 +86,7 @@ standards and am skilled in front-end and back-end development. I am driven by t
     {
       company: "The W.I.S.E foundation",
       position: "Full Stack Developer",
-      duration: "11/2024 - present",
+      duration: "11/2024 - 02/2025",
     },
     {
       company: "HP",
@@ -109,8 +119,8 @@ const education = {
   items: [
     {
       institution: "TripleTen Academy",
-      degree: "Full Stack Developer",
-      duration: "08/2021 - 11/2024",
+      degree: "Full Stack Developement",
+      duration: "01/2024 - 11/2024",
     },
     {
       institution: "Ort Hermelin, Netanya",
